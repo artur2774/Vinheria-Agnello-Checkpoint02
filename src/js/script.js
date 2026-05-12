@@ -13,6 +13,7 @@ let nomeDoVinho = prompt("Insira o nome do vinho");
 let tipoDoVinho = prompt("Insira o tipo de vinho \nBranco, Tinto, Rose");
 tipoDoVinho = tipoDoVinho.toLowerCase();
 
+// função de verificação de idade
 function verifIdade() {
     let safra = Number(prompt("Insira o ano da safra do vinho"))
     while (isNaN(safra)) {
@@ -24,6 +25,7 @@ function verifIdade() {
 
 let safraDoVinho = verifIdade();
 
+// função de separação de tipos
 function addVinhos() {
     if (tipoDoVinho == "branco") {
         vinhoBranco += 1;
@@ -42,6 +44,7 @@ function addVinhos() {
     }
 }
 
+// função de identificação de safra
 function anoSafra() {
     if (2026 - safraDoVinho > 50) {
         antigo += 1;
@@ -54,6 +57,7 @@ function anoSafra() {
     }
 }
 
+// função de verificção de estoque
 function estoqueBaixo() {
 
      estoqueBaixoQtd = 0;
