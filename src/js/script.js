@@ -60,7 +60,7 @@ function anoSafra() {
 // função de verificção de estoque
 function estoqueBaixo() {
 
-     estoqueBaixoQtd = 0;
+    estoqueBaixoQtd = 0;
 
     if (vinhoBranco < 5) {
         console.log("Vinho Branco com estoque baixo")
